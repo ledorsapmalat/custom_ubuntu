@@ -1,4 +1,4 @@
-# helix-customized-ubuntu
+# custom_ubutu
 
 This project was created to customized a LINUX (Ubuntu Flavor) 32-Bit Server for Helix's taste targeting initially the Locker Network (BOSS) Application.  It can be customized based on the needs of individual application.
 
