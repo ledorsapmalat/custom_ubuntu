@@ -1,0 +1,7 @@
+    table Icon
+      Caption: UXTerm
+      ToolTip.Caption: UXTerm
+      Icon: /home/you/.idesktop/home.png
+      Command[0]: nautilus /home/you
+      Command[1]: nautilus /home/you/otherDir
+    end

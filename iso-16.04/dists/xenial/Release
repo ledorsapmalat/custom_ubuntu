@@ -1,0 +1,43 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: xenial
+Version: 16.04
+Codename: xenial
+Date: Thu, 21 Apr 2016 23:23:46 UTC
+Architectures: i386
+Components: main restricted
+Description: Ubuntu Xenial 16.04
+Acquire-By-Hash: yes
+MD5Sum:
+ e62ff0123a74adfc6903d59a449cbdb0       40 restricted/debian-installer/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 restricted/debian-installer/binary-i386/Packages
+ be5a6215c8365ad6fcccfb5e5febdfa3      101 restricted/binary-i386/Release
+ afc4d257b5b6a2903472c735ecaabec1     1316 restricted/binary-i386/Packages.gz
+ 10faf9a4fe92ab6d23b005657ccedc4d     2651 restricted/binary-i386/Packages
+ 2878ba500d6156974df0d3bc02ebbed1    47755 main/debian-installer/binary-i386/Packages.gz
+ 22a6b11c9b152ff209b9afc9253da5dc   153164 main/debian-installer/binary-i386/Packages
+ 4b055b3443971f13d049b8f474ad3af2       95 main/binary-i386/Release
+ becf7c23b11329ccd65f1442e8eef52a   518869 main/binary-i386/Packages.gz
+ 18f725bcdcb4fecc55e3db4f7f708928  1728875 main/binary-i386/Packages
+SHA1:
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3       40 restricted/debian-installer/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 restricted/debian-installer/binary-i386/Packages
+ 941d15cd3f6550b713e7e32b6e8316e753dabe5a      101 restricted/binary-i386/Release
+ c4f65cfa41cf022561b0c46186d3f7bdee711d93     1316 restricted/binary-i386/Packages.gz
+ b05ffa6546b9a0b01ebd4b526ad3a6029cc0ce26     2651 restricted/binary-i386/Packages
+ 75a31f5bfd3df4a3b161f6df3e659e1c4e5c9c40    47755 main/debian-installer/binary-i386/Packages.gz
+ 53acbbddb58e66b410b32af91ba9e35da5106f4f   153164 main/debian-installer/binary-i386/Packages
+ 72839fbb199ce544157450b5bb05d49f8e54843a       95 main/binary-i386/Release
+ d9c8c6dc883b3e9653bf19732d7d895b4a92a75b   518869 main/binary-i386/Packages.gz
+ 14c4cfa47cd5f597a483cf7a85078079cd8d9c91  1728875 main/binary-i386/Packages
+SHA256:
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4       40 restricted/debian-installer/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 restricted/debian-installer/binary-i386/Packages
+ 9c884e61862bff2f49669b42b182c09479e8e117fea930bea36dadfdb52a3e3e      101 restricted/binary-i386/Release
+ 82a0d9021f34b6e7a40bffda680fb69851ae8d1a3bb24ea566c9279b2f7f56af     1316 restricted/binary-i386/Packages.gz
+ 15d45a345f657b6d2b8dbb7ca4dd23608b8e8509a2ba65cb471a3e37cc183861     2651 restricted/binary-i386/Packages
+ 3ac07edda838e94d542d19e663a272a11cb92bd8d08d741864363541e52c7ff6    47755 main/debian-installer/binary-i386/Packages.gz
+ 5e45e801b247820f1c57b0afe6126a47e70d9596c30065762e169a47fcca1766   153164 main/debian-installer/binary-i386/Packages
+ 464a48de412a1ac9dfb94c0aed99be3192cfb08c31793878abd9c12049fc4e13       95 main/binary-i386/Release
+ 247165c4428d045f9208739181008fad769a797777f44f8acbe6655676b48fc6   518869 main/binary-i386/Packages.gz
+ c558e00cf2a8d89faab9b0dd3edc9ea6d3185369a8d5aa2fb2d6823c76f62288  1728875 main/binary-i386/Packages

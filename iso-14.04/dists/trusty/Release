@@ -1,0 +1,42 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: trusty
+Version: 14.04
+Codename: trusty
+Date: Thu, 08 May 2014 14:19:09 UTC
+Architectures: i386
+Components: main restricted
+Description: Ubuntu Trusty 14.04
+MD5Sum:
+ e62ff0123a74adfc6903d59a449cbdb0       40 restricted/debian-installer/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 restricted/debian-installer/binary-i386/Packages
+ 597bd61f5dc069694e425070241bd2d9      101 restricted/binary-i386/Release
+ e62ff0123a74adfc6903d59a449cbdb0       40 restricted/binary-i386/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 restricted/binary-i386/Packages
+ 092143dd93aad4ca558818dad1d1207b    47948 main/debian-installer/binary-i386/Packages.gz
+ cb5a2b6f614687a20ae91635c6722c5e   153596 main/debian-installer/binary-i386/Packages
+ 60cd95dff4f53976b4179a8a061a666e       95 main/binary-i386/Release
+ b589fe5f73574164afac65a343f9e1fa   503381 main/binary-i386/Packages.gz
+ 1646d907f1832bfb2db2d726f5af9184  1664009 main/binary-i386/Packages
+SHA1:
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3       40 restricted/debian-installer/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 restricted/debian-installer/binary-i386/Packages
+ 912736ac362f34b555ea831060fe7fda99953c07      101 restricted/binary-i386/Release
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3       40 restricted/binary-i386/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709        0 restricted/binary-i386/Packages
+ c7a5c638e16504dffdebe82f56595f34248c1cb8    47948 main/debian-installer/binary-i386/Packages.gz
+ e71c2720d18580e09a4f4c4041a2a8578d292490   153596 main/debian-installer/binary-i386/Packages
+ 874b6cd3776f85508fc3633b8c095c3422d8185c       95 main/binary-i386/Release
+ e09e725e11232a950df072a813050f24cc66f4bc   503381 main/binary-i386/Packages.gz
+ c438340fdfec9e5001e59f5f986d536c3410c056  1664009 main/binary-i386/Packages
+SHA256:
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4       40 restricted/debian-installer/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 restricted/debian-installer/binary-i386/Packages
+ df128768f2525c928168acc7ea3761b447139c7f7e8f213c447783e7fae75845      101 restricted/binary-i386/Release
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4       40 restricted/binary-i386/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 restricted/binary-i386/Packages
+ 97735eb6f521a7fefa01e8d1e4da3ea22817fe05de75ecb8176745e1ffd3967a    47948 main/debian-installer/binary-i386/Packages.gz
+ 442569a2bd52f74f344f21dca1e918942165df33cafe4a378b88664eccfb6018   153596 main/debian-installer/binary-i386/Packages
+ 4984b26984b4e9e7de18c48e724e1bdd970868c84fc0e950e88f12592cd43501       95 main/binary-i386/Release
+ 2f5823f1bbb0fff329357ffbc1d99f7a8936f49e40d9eb7f3ee2b09058f3b560   503381 main/binary-i386/Packages.gz
+ 221496bcbf42db4073577ba31ba8e0c1e69bdb895ad0c9787dcc25f511ffca6f  1664009 main/binary-i386/Packages

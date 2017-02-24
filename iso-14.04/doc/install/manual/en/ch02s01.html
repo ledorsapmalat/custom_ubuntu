@@ -1,0 +1,392 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2.1. Supported Hardware</title>
+<link rel="stylesheet" type="text/css" href="install.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Ubuntu Installation Guide">
+<link rel="up" href="ch02.html" title="Chapter 2. System Requirements">
+<link rel="prev" href="ch02.html" title="Chapter 2. System Requirements">
+<link rel="next" href="ch02s02.html" title="2.2. Devices Requiring Firmware">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">2.1. Supported Hardware</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch02.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 2. System Requirements</th>
+<td width="20%" align="right"> <a accesskey="n" href="ch02s02.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="hardware-supported"></a>2.1. Supported Hardware</h2></div></div></div>
+<p>
+
+Ubuntu does not impose hardware requirements beyond the requirements
+of the Linux kernel and the GNU tool-sets.  Therefore, any
+architecture or platform to which the Linux kernel, libc,
+<span class="command"><strong>gcc</strong></span>, etc. have been ported, and for which an Ubuntu
+port exists, can run Ubuntu.
+
+
+</p>
+<p>
+
+Rather than attempting to describe all the different hardware
+configurations which are supported for <span class="phrase">Intel x86</span>, this section
+contains general information and pointers to where additional
+information can be found.
+
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idp41303788"></a>2.1.1. Supported Architectures</h3></div></div></div>
+<p>
+
+Ubuntu 14.04 supports three major architectures and several
+variations of each architecture known as <span class="quote">“<span class="quote">flavors</span>”</span>.
+One other architecture (IBM/Motorola PowerPC) has an unofficial port.
+
+</p>
+<p>
+
+</p>
+<div class="informaltable"><table border="1">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>Architecture</th>
+<th>Ubuntu Designation</th>
+<th>Subarchitecture</th>
+<th>Flavor</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Intel x86-based</td>
+<td>i386</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>AMD64 &amp; Intel EM64T</td>
+<td>amd64</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="4">ARM</td>
+<td rowspan="4">armhf</td>
+<td>Marvell Dove</td>
+<td>dove</td>
+</tr>
+<tr>
+<td>Freescale i.MX51</td>
+<td>imx51</td>
+</tr>
+<tr>
+<td>TI OMAP</td>
+<td>omap</td>
+</tr>
+<tr>
+<td>Versatile</td>
+<td>versatile</td>
+</tr>
+<tr>
+<td>IBM/Motorola PowerPC</td>
+<td>powerpc</td>
+<td>PowerMac</td>
+<td>pmac</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idp41313396"></a>2.1.2. CPU, Main Boards, and Video Support</h3></div></div></div>
+<p>
+
+Complete information concerning supported peripherals can be found at
+<a class="ulink" href="http://www.tldp.org/HOWTO/Hardware-HOWTO.html" target="_top">Linux Hardware Compatibility HOWTO</a>.
+This section merely outlines the basics.
+
+</p>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="idp41314676"></a>2.1.2.1. CPU</h4></div></div></div>
+<p>
+
+Nearly all x86-based (IA-32) processors still in use in personal computers
+are supported, including all varieties of Intel's "Pentium" series.
+This also includes 32-bit AMD and VIA (former Cyrix) processors, and
+processors like the Athlon XP and Intel P4 Xeon.
+
+</p>
+<p>
+
+However, Ubuntu trusty will <span class="emphasis"><em>not</em></span> run
+on i586 or earlier processors.  Despite the architecture name "i386", support
+for actual 80386 processors (and their clones) was dropped with the Sarge
+(r3.1) release of Debian<a href="#ftn.idp41315884" class="footnote" name="idp41315884"><sup class="footnote">[2]</sup></a>. (No version of Linux has ever supported the 286 or earlier
+chips in the series.)  Support for i586 and lower processors, as well as for
+i686 processors without the cmov instruction, was dropped in Ubuntu 10.10.
+Most i686 and later processors are still supported<a href="#ftn.idp38142964" class="footnote" name="idp38142964"><sup class="footnote">[3]</sup></a>.
+
+</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Note</h3>
+<p>
+
+If your system has a 64-bit processor from the AMD64 or Intel EM64T families,
+you will probably want to use the installer for the amd64 architecture instead
+of the installer for the (32-bit) i386 architecture.
+
+</p>
+</div>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="bus"></a>2.1.2.2. I/O Bus</h4></div></div></div>
+<p>
+
+The system bus is the part of the motherboard which allows the CPU to
+communicate with peripherals such as storage devices.  Your computer
+must use the ISA, EISA, PCI, PCIe, or VESA Local Bus (VLB, sometimes called the VL
+bus).  Essentially all personal computers sold in recent years use one
+of these.
+
+</p>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="laptops"></a>2.1.3. Laptops</h3></div></div></div>
+<p>
+
+Laptops are also supported and nowadays most laptops work out of the box.
+In case a laptop contains specialized or proprietary hardware, some specific
+functions may not be supported.  To see if your particular laptop works well
+with GNU/Linux, see for example the
+<a class="ulink" href="http://www.linux-laptop.net/" target="_top">Linux Laptop pages</a>.
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idp38149492"></a>2.1.4. Multiple Processors</h3></div></div></div>
+<p>
+
+Multiprocessor support — also called <span class="quote">“<span class="quote">symmetric
+multiprocessing</span>”</span> or SMP — is available for this architecture.
+The standard Ubuntu 14.04 kernel image has been compiled with
+<em class="firstterm">SMP-alternatives</em> support. This means that the kernel
+will detect the number of processors (or processor cores) and will
+automatically deactivate SMP on uniprocessor systems.
+
+</p>
+<p>
+
+The 486 flavour of the Ubuntu kernel image packages for <span class="phrase">Intel x86</span>
+is not compiled with SMP support.
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="gfx"></a>2.1.5. Graphics Card Support</h3></div></div></div>
+<p>
+
+You should be using a VGA-compatible display interface for the console
+terminal. Nearly every modern display card is compatible with
+VGA. Ancient standards such CGA, MDA, or HGA should also work,
+assuming you do not require X11 support.  Note that X11 is not used
+during the installation process described in this document.
+
+</p>
+<p>
+
+Ubuntu's support for graphical interfaces is determined by the
+underlying support found in X.Org's X11 system.  Most AGP, PCI and
+PCIe video cards work under X.Org.  Details on supported graphics
+buses, cards, monitors, and pointing devices can be found at
+<a class="ulink" href="http://xorg.freedesktop.org/" target="_top">http://xorg.freedesktop.org/</a>.  Ubuntu 14.04 ships
+with X.Org version 7.5.
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="network-cards"></a>2.1.6. Network Connectivity Hardware</h3></div></div></div>
+<p>
+
+Almost any network interface card (NIC) supported by the Linux kernel
+should also be supported by the installation system; modular drivers
+should normally be loaded automatically.
+
+<span class="phrase">This includes most PCI and PCMCIA cards.</span>
+<span class="phrase">Many older ISA cards are supported as well.</span>
+
+</p>
+<p>
+
+ISDN is supported, but not during the installation.
+
+</p>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="nics-wireless"></a>2.1.6.1. Wireless Network Cards</h4></div></div></div>
+<p>
+
+Wireless networking is in general supported as well and a growing number of
+wireless adapters are supported by the official Linux kernel, although many
+of them do require firmware to be loaded. If firmware is needed, the installer
+will prompt you to load firmware. See <a class="xref" href="ch06s04.html" title="6.4. Loading Missing Firmware">Section 6.4, “Loading Missing Firmware”</a>
+for detailed information on how to load firmware during the installation.
+
+</p>
+<p>
+
+Wireless NICs that are not supported by the official Linux kernel can generally
+be made to work under Debian GNU/Linux, but are not supported during the installation.
+
+</p>
+<p>
+
+Support for encrypted wireless during installation is currently limited to WEP.
+If your access point uses stronger encryption, it cannot be used during the
+installation process.
+
+</p>
+<p>
+
+If there is a problem with wireless and there
+is no other NIC you can use during the installation, it is still
+possible to install Debian GNU/Linux using a full CD-ROM or DVD image. Select the
+option to not configure a network and install using only the packages
+available from the CD/DVD. You can then install the driver and firmware you
+need after the installation is completed (after the reboot) and configure
+your network manually.
+
+</p>
+<p>
+
+In some cases the driver you need may not be available as a Debian package.
+You will then have to look if there is source code available in the internet
+and compile the driver yourself. How to do this is outside the scope of this
+manual.
+<span class="phrase">If no Linux driver is available, your last resort is to
+use the <code class="classname">ndiswrapper</code> package, which allows you to use
+a Windows driver.</span>
+
+</p>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="braille-displays"></a>2.1.7. Braille Displays</h3></div></div></div>
+<p>
+
+Support for braille displays is determined by the underlying support
+found in <code class="classname">brltty</code>. Most displays work under
+<code class="classname">brltty</code>, connected via either a serial port, USB
+or bluetooth. Details on supported braille devices can be found on the
+<a class="ulink" href="http://www.mielke.cc/brltty/" target="_top"><code class="classname">brltty</code> website</a>.
+Ubuntu 14.04 ships with <code class="classname">brltty</code> version
+4.1.
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="hardware-speech-synthesis"></a>2.1.8. Hardware Speech Synthesis</h3></div></div></div>
+<p>
+
+Support for hardware speech synthesis devices is determined by the
+underlying support found in <code class="classname">speakup</code>.
+<code class="classname">speakup</code> only supports integrated boards and
+external devices connected to a serial port (no USB or serial-to-USB
+adapters are supported). Details on supported hardware speech synthesis
+devices can be found on the
+<a class="ulink" href="http://www.linux-speakup.org/" target="_top"><code class="classname">speakup</code> website</a>.
+Ubuntu 14.04 ships with <code class="classname">speakup</code> version
+3.1.4.
+
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="supported-peripherals"></a>2.1.9. Peripherals and Other Hardware</h3></div></div></div>
+<p>
+
+Linux supports a large variety of hardware devices such as mice,
+printers, scanners, PCMCIA and USB devices.  However, most of these
+devices are not required while installing the system.
+
+</p>
+<p>
+
+USB hardware generally works fine, only some
+USB keyboards may require additional configuration
+(see <a class="xref" href="ch03s06.html#hardware-issues" title="3.6.4. Hardware Issues to Watch Out For">Section 3.6.4, “Hardware Issues to Watch Out For”</a>).
+
+</p>
+<p>
+
+Again, see the
+<a class="ulink" href="http://www.tldp.org/HOWTO/Hardware-HOWTO.html" target="_top">Linux Hardware Compatibility HOWTO</a>
+to determine whether your specific hardware is supported by Linux.
+
+</p>
+</div>
+<div class="footnotes">
+<br><hr style="width:100; text-align:left;margin-left: 0">
+<div id="ftn.idp41315884" class="footnote"><p><a href="#idp41315884" class="para"><sup class="para">[2] </sup></a>
+We have long tried to avoid this, but in the end it was necessary due a
+unfortunate series of issues with the compiler and the kernel, starting
+with an bug in the C++ ABI provided by GCC.  You should still be able to
+run Ubuntu on actual 80386 processors if you compile your own
+kernel and compile all packages from source, but that is beyond the
+scope of this manual.
+</p></div>
+<div id="ftn.idp38142964" class="footnote"><p><a href="#idp38142964" class="para"><sup class="para">[3] </sup></a>
+
+Many Ubuntu packages will actually run slightly faster on modern computers
+as a positive side effect of dropping support for these old chips.  The
+i486, introduced in 1989, has three opcodes (bswap, cmpxchg, and xadd)
+which the i386, introduced in 1986, did not have. Previously, these could not
+be easily used by most Ubuntu packages; now they can.
+
+</p></div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch02.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="ch02s02.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Chapter 2. System Requirements </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> 2.2. Devices Requiring Firmware</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

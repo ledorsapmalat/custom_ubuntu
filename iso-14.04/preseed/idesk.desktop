@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/usr/bin/idesk
+Name=IDesk Application
+Comment=Startup IDesk Application
+Terminal=false
+Type=Application
+X-GNOME-Autostart-Delay=1
+StartupNotify=false
+NoDisplay=true
