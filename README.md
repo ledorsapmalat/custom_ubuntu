@@ -1,6 +1,6 @@
 # custom_ubutu
 
-This project was created to customized a LINUX (Ubuntu Flavor) 32-Bit Server for Helix's taste targeting initially the Locker Network (BOSS) Application.  It can be customized based on the needs of individual application.
+This project was created to customized a LINUX (Ubuntu Flavor) 32-Bit Server targeting initially for use on a JavaFX Standalone Application.  It can be customized based on the needs of individual application.
 
 ## Main Files to Modify
 ```
@@ -22,7 +22,7 @@ The file isolinux/txt.cfg needs to be modified to cater for your project specifi
 ```
 default  custom_install
 label custom_install
-  menu label ^Install Helix Ubuntu OS
+  menu label ^Install Custom Ubuntu OS
   kernel /install/vmlinuz 
   append  file=/cdrom/preseed/ks-custom.seed initrd=/install/initrd.gz quiet ks=cdrom:/preseed/ks-custom.cfg -- 
 ```
@@ -37,11 +37,11 @@ You can learn more on this at http://askubuntu.com/questions/409607/how-to-creat
 After modifying required files above or base on your requirement, you can start creating your OWN DISTROBUTION of this OS via the following command:
 
 ```
-sudo mkisofs -J -l -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -z -iso-level 4 -c isolinux/isolinux.cat -o <TARGET_DIRECTORY>/helix-ubuntu-16.04-i386.iso -joliet-long <GIT_CLONE_DIRECTORY_OF_THIS_PROJECT>
+sudo mkisofs -J -l -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -z -iso-level 4 -c isolinux/isolinux.cat -o <TARGET_DIRECTORY>/custom-ubuntu-16.04-i386.iso -joliet-long <GIT_CLONE_DIRECTORY_OF_THIS_PROJECT>
 ```
 e.g.
 ```
-sudo mkisofs -J -l -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -z -iso-level 4 -c isolinux/isolinux.cat -o /home/rtalampas/Development/ISO/helix-ubuntu-16.04-i386.iso -joliet-long /home/rtalampas/Development/ISOWorkspace/hubuntu/
+sudo mkisofs -J -l -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -z -iso-level 4 -c isolinux/isolinux.cat -o /home/rtalampas/Development/ISO/custom-ubuntu-16.04-i386.iso -joliet-long /home/rtalampas/Development/ISOWorkspace/hubuntu/
 
 ```
 Once you have your ISO file, you can burn this into a CD or a USB Stick. Plug the CD or USB Stick to a MACHINE and it WILL AUTO INSTALL HUBUNTU (Helix Ubuntu).
