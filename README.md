@@ -1,4 +1,4 @@
-# custom_ubutu
+# custom_ubuntu
 
 This project was created to customized a LINUX (Ubuntu Flavor) 32-Bit Server targeting initially for use on a JavaFX Standalone Application.  It can be customized based on the needs of individual application.
 
