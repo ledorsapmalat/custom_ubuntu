@@ -49,13 +49,13 @@ in-target chmod +x /etc/chef/install.sh ; \
 in-target /etc/chef/install.sh ; \
 cp /cdrom/preseed/file.json /target/etc/chef/. ; \
 cp /cdrom/preseed/client.rb /target/etc/chef/. ; \
-in-target mkdir -p "/home/tln" ; \
-in-target chown tln:tln /home/tln ; \
-cp /cdrom/preseed/bootstrap.sh /target/home/tln/. ; \
-in-target chmod +x /home/tln/bootstrap.sh ; \
-cp /cdrom/preseed/hostnamechange.sh /target/home/tln/. ; \
-in-target chmod +x /home/tln/hostnamechange.sh ; \
-in-target /home/tln/hostnamechange.sh ; \
+in-target mkdir -p "/home/rodel" ; \
+in-target chown rodel:rodel /home/rodel ; \
+cp /cdrom/preseed/bootstrap.sh /target/home/rodel/. ; \
+in-target chmod +x /home/rodel/bootstrap.sh ; \
+cp /cdrom/preseed/hostnamechange.sh /target/home/rodel/. ; \
+in-target chmod +x /home/rodel/hostnamechange.sh ; \
+in-target /home/rodel/hostnamechange.sh ; \
 in-target mkdir "/usr/share/fonts/truetype/lockers"; \
 cp /cdrom/preseed/*.ttf /target/usr/share/fonts/truetype/lockers/. \
 in-target fc-cache -f -v
