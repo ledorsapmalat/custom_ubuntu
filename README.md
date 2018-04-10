@@ -44,4 +44,4 @@ e.g.
 sudo mkisofs -J -l -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -z -iso-level 4 -c isolinux/isolinux.cat -o /home/rtalampas/Development/ISO/custom-ubuntu-16.04-i386.iso -joliet-long /home/rtalampas/Development/ISOWorkspace/hubuntu/
 
 ```
-Once you have your ISO file, you can burn this into a CD or a USB Stick. Plug the CD or USB Stick to a MACHINE and it WILL AUTO INSTALL HUBUNTU (Helix Ubuntu).
+Once you have your ISO file, you can burn this into a CD or a USB Stick. Plug the CD or USB Stick to a MACHINE and it WILL AUTO INSTALL HUBUNTU (Custom Ubuntu).
